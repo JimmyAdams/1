@@ -1,18 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 void vypis (int n);
+
+int dlzka(const char *c);
 
 int main(int argc, char *argv[])
 {
 	int n;
-	if ( argc = 2)
+	char meno[100];
+	if ( argc == 2)
 	{
-		n = atoi(argv[1]);
+		strcpy(meno, argv[1]);
 	}
-
-	vypis(n);
-	printf("...\n");
+	vypis(dlzka(meno)+2);
+	printf("#%s#\n", meno);
+	vypis(dlzka(meno)+2);
 	return 0;
 }
 
@@ -23,4 +27,12 @@ void vypis(int n)
 		printf("#");
 	}
 	printf("\n");
+}
+
+int dlzka(const char *c)
+{
+	int d;
+	for(int i=0; c[i]!='\0'; i++)
+		d=i;
+	return d+1;
 }
