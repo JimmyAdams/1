@@ -1,17 +1,18 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int vypis (int n);
+void vypis (int n);
 
-int maint(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int n;
 	if ( argc = 2)
 	{
-		n = atoi(arv[1])
+		n = atoi(argv[1]);
 	}
 
 	vypis(n);
-	printf("...");
+	printf("...\n");
 	return 0;
 }
 
