@@ -6,10 +6,10 @@ void vypis (int n);
 
 int dlzka(const char *c);
 
-int main(int argc, char *argv[])
+int main(int argc, char *argv[]) //###########
 {
 	int n;
-	char meno[100];
+	char meno[100]; 
 	if ( argc == 2)
 	{
 		strcpy(meno, argv[1]);
